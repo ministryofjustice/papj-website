@@ -16,6 +16,154 @@
                 "id": ""
             },
             "layouts": {
+                "5ac614657be0a": {
+                    "key": "5ac614657be0a",
+                    "name": "landing_page",
+                    "label": "Landing page",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ac6146f7be0b",
+                            "label": "Groups",
+                            "name": "groups",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add group",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ac614837be0c",
+                                    "label": "Group name",
+                                    "name": "group_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ac614917be0d",
+                                    "label": "Cards",
+                                    "name": "cards",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "Add card",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5ac614ab7be0e",
+                                            "label": "Title",
+                                            "name": "title",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5ac614b57be0f",
+                                            "label": "Content",
+                                            "name": "content",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0
+                                        },
+                                        {
+                                            "key": "field_5ac614ca7be10",
+                                            "label": "Link",
+                                            "name": "link",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array"
+                                        },
+                                        {
+                                            "key": "field_5ac617763a427",
+                                            "label": "Image",
+                                            "name": "image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "preview_size": "thumbnail",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5a1c390477c34": {
                     "key": "5a1c390477c34",
                     "name": "text_block",
@@ -409,51 +557,6 @@
                     "min": "",
                     "max": ""
                 },
-                "5a1d26d5aeb88": {
-                    "key": "5a1d26d5aeb88",
-                    "name": "search",
-                    "label": "Search",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5a201e78eb908",
-                            "label": "Default search term",
-                            "name": "default_search_term",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5aaa329f7927c",
-                            "label": "Job feed URL",
-                            "name": "job_feed_url",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5a218cbc4841a": {
                     "key": "5a218cbc4841a",
                     "name": "navigation_block",
@@ -522,6 +625,70 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5acb88eae6390": {
+                    "key": "5acb88eae6390",
+                    "name": "search",
+                    "label": "Search",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5acb890ce6391",
+                            "label": "Job Feed URL",
+                            "name": "job_feed_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5acb892be6392",
+                            "label": "Job List Message",
+                            "name": "job_list_message",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5acb8b3f61f2a",
+                            "label": "Job List Message URL",
+                            "name": "job_list_message_url",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add page block",
@@ -553,5 +720,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1521559068
+    "modified": 1523289179
 }

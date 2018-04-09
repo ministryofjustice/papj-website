@@ -9,7 +9,6 @@ $multiTextBlockClassName = "text-block__multi-text-block-container";
 $multiTextBlockClasses = $multiTextBlockClassName;
 $multiTextBlocks = false;
 
-
 // the default format of this new acf select field is different if it hasn't been saved
 if (isset($td['width'])) {
     if (is_array($td['width'])) {

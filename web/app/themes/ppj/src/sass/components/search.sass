@@ -204,6 +204,13 @@
     padding: $common-spacing
     text-align: left
 
+  &__jobs-available-title
+    .youth-custody &:before
+      content: 'Youth custody Prison officer'
+
+    .prison-officer &:before
+      content: 'Prison officer'
+
   &__results
     $sr: &
     @include bp('portrait')
@@ -371,6 +378,17 @@
       &:hover:nth-last-child(2):after
         @include bp('portrait')
           cursor: s-resize
+
+  &__job-list-message
+    background-color: rgba($color-main, 0.1)
+    display: none
+    padding: $common-spacing
+    padding-bottom: $common-spacing * 2
+    text-align: left
+    text-decoration: underline
+
+    .youth-custody &
+      display: block
 
   &__map
     display: flex

@@ -13,6 +13,7 @@
                 <nav-link v-on:request-open-nav-menu="openNavMenu"></nav-link>
                 <nav-menu :menu-data='menuData' v-on:request-close-nav-menu="closeNavMenu"></nav-menu>
               </div>
+              <h1 class="header__site-header-title">Prison and Probation Jobs</h1>
             </div>
         </div>
         <div class="header__hero">

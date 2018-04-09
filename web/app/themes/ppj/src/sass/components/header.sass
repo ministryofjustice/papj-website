@@ -65,6 +65,38 @@
         max-width: 128.4rem
         padding: $common-spacing * 2
 
+    &-title // TODO change after merge with de-vue branch
+      @extend .common-header
+      &:before
+        border-top-color: $color-white
+
+        @include bp('landscape')
+          margin-left: 0
+
+      color: $color-white
+      display: none
+      font-size: 2.6rem
+      line-height: 3rem
+      padding: $common-spacing
+
+      @include bp('portrait')
+        font-size: 4.2rem
+        line-height: 4.8rem
+
+      @include bp('landscape')
+        font-size: 5rem
+        line-height: 5.6rem
+        margin: 0 auto
+        max-width: 128.4rem
+        padding: $common-spacing * 2
+
+      @include bp('large')
+        font-size: 7.2rem
+        line-height: 8.2rem
+
+      .landing-page &
+        display: block
+
   &__image
     height: 100%
     opacity: 0
@@ -161,6 +193,9 @@
     padding: .3em .7em .3em
     pointer-events: auto
     text-align: center
+
+    .landing-page &
+      background-color: $color-transparent
 
     @include bp('portrait')
       width: 11.3rem
@@ -387,3 +422,6 @@
 
       &__hero
         display: none
+
+
+

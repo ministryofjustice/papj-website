@@ -1,4 +1,192 @@
-$color-main: #0099cc
-$color-tertiary: rgb(113,11,105)
+@import 'colors'
+
+$color-main: $color-1
+$color-tertiary: $color-2
 
 @import 'main'
+
+.landing-page-groups
+  $lpg: &
+  margin: 0 auto
+  padding: 0 $common-spacing
+  //max-width: 85%
+
+  @include bp('portrait')
+    margin: 0 auto
+    //max-width: none
+    //width: 75%
+    padding: 0 8rem
+
+  @include bp('landscape')
+    //width: 91.5rem
+    padding: 0 11rem
+
+  @include bp('large')
+    //width: 120rem
+
+
+  &__group
+    margin-top: $common-spacing * 2
+
+    &--prison-jobs
+      #{$lpg}__card-cta-link
+        background-color: $color-1
+
+    &--probation-jobs
+      #{$lpg}__card-cta-link
+        background-color: $color-2
+
+    &--other-roles
+      #{$lpg}__card-cta-link
+        background-color: $color-3
+
+    &--other
+
+  &__group-title-container
+    display: flex
+    margin-bottom: $common-spacing
+    position: relative
+
+    &:before
+      background-color: $color-light
+      content: ' '
+      display: block
+      height: .2rem
+      left: 0
+      position: absolute
+      right: 0
+      top: 50%
+
+    @include bp('large')
+      //margin: 0 7.8rem
+      //padding: 0 3.2rem
+
+  &__group-title
+    background: $color-white
+    display: block
+    font-size: 2.2rem
+    line-height: 2.6rem
+    margin-bottom: 0
+    margin-top: 0
+    padding-right: $common-spacing / 2
+    z-index: 1
+
+    @include bp('portrait')
+      font-size: 3rem
+      line-height: 3.6rem
+      margin-left: auto
+      margin-right: auto
+      padding: .5em
+      text-align: center
+
+    @include bp('landscape')
+      font-size: 3.8rem
+      line-height: 4.6rem
+      //margin-bottom: 2.4rem
+
+    @include bp('large')
+      font-size: 4.4rem
+      line-height: 5rem
+
+  &__card-row
+    $cr: &
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    @include bp('portrait')
+      align-items: stretch
+      flex-direction: row
+      justify-content: center
+      padding: 0 8rem
+
+      &--number-of-cards-1 #{$lpg}__card
+        max-width: 24rem
+        width: 48%
+
+      &--number-of-cards-2 #{$lpg}__card
+        //max-width: 24rem
+        width: 49%
+
+      &--number-of-cards-3 #{$lpg}__card
+        width: 32%
+
+    @include bp('landscape')
+      padding: 0 11rem
+
+      &--number-of-cards-1 #{$lpg}__card
+        max-width: 32rem
+        width: 48%
+
+      &--number-of-cards-2 #{$lpg}__card
+        //max-width: 32rem
+        width: 49%
+
+      &--number-of-cards-3 #{$lpg}__card
+        width: 32%
+
+  &__card
+    display: flex
+    flex-direction: column
+    font-size: 1.6rem
+    line-height: 2.2rem
+    margin: 0 0 $common-spacing * 2
+    //max-width: 38rem
+    //width: 100%
+
+    @include bp('portrait')
+      margin-left: $common-spacing
+      margin-right: $common-spacing
+
+    @include bp('landscape')
+      font-size: 1.8rem
+      line-height: 2.4rem
+
+    @include bp('large')
+      font-size: 2.4rem
+      line-height: 3.2rem
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__card-title
+    font-size: 2.2rem
+
+    @include bp('large')
+      font-size: 3.2rem
+
+  &__card-image-container
+    height: 0
+    margin: 0 0 $common-spacing
+    padding-bottom: percentage(9/16)
+    position: relative
+    width: 100%
+
+  &__card-image-ratio
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    top: 0
+
+  &__card-image
+    height: 100%
+    width: 100%
+
+  &__card-cta-link
+    @extend .cta-link
+    font-size: 2rem
+    margin-top: auto
+    width: 100%
+
+    @include bp('portrait')
+
+    @include bp('landscape')
+      font-size: 2.4rem
+
+    @include bp('large')
+      font-size: 2.8rem
+

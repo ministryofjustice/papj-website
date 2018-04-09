@@ -87,7 +87,7 @@
       ></div>
     </div>
     <div class="search__jobs-available-container">
-      <div class="search__jobs-available"><span>{{searchResults.jobs.length }}</span> prison officer jobs available:</div>
+      <div class="search__jobs-available"><span>{{searchResults.jobs.length }}</span> <span class="search__jobs-available-title"></span> jobs available:</div>
     </div>
     <div class="search__view-list-container">
       <ul class="search__view-list">
@@ -109,9 +109,15 @@
           >
           </job-summary>
         </li>
+        <li>
+          <div class="search__job-list-message"
+          >
+            <a href="/prison-officer/find-a-job">See other Prison jobs</a>
+          </div>
+        </li>
       </ul>
       <div class="search__pagination"
-           v-if="deviceIsMobile">
+           v-if="deviceIsMobile && (numberOfResultPages > 1)">
         <a class="search__pagination-skip-link"
            :class="{'search__pagination-skip-link--enabled': (backwardEnabled == true)}"
            @click.stop.prevent="showFirstPage">
@@ -153,6 +159,7 @@
            @click.stop.prevent="showLastPage"
         >last</a>
       </div>
+
     </div>
   </div>
 </template>
@@ -170,6 +177,14 @@
         type: String
       },
       'jobFeedUrl': {
+        default: '',
+        type: String
+      },
+      'jobListMessage': {
+        default: '',
+        type: String
+      },
+      'jobListMessageURL': {
         default: '',
         type: String
       }
@@ -694,6 +709,9 @@
       this.mounted = true;
 
       window.addEventListener('resize', this.handleScreenResize);
+
+      console.log('job list message: ' , this.jobListMessage);
+      console.log('job list message URL: ' , this.jobListMessageURL);
 
       axios.get(this.vacanciesDataURL,  { responseType: 'json' })
         .then(
