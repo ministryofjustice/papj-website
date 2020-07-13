@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fb7fcbcf9c1f508554793e63ca39ba7",
+    "content-hash": "2ed3a124b67a075acb1e488892925011",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
-            "version": "5.8.9",
+            "version": "5.8.11",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.8.9.zip",
-                "shasum": "fbb8ca091ebb08a13d5423acd3e04f0f365b86de"
+                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.8.11.zip",
+                "shasum": "d3d3254dfc1ff42f01645f21b82baa158cc99796"
             },
             "type": "wordpress-plugin"
         },
@@ -145,21 +145,21 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.4.1",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684"
+                "reference": "18c41a328193d6f7425a3cea4e01faa220e90218"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684",
-                "reference": "2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/18c41a328193d6f7425a3cea4e01faa220e90218",
+                "reference": "18c41a328193d6f7425a3cea4e01faa220e90218",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.4.1",
-                "johnpbloch/wordpress-core-installer": "^1.0",
+                "johnpbloch/wordpress-core": "5.4.2",
+                "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
             "type": "package",
@@ -180,27 +180,28 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-04-29T19:02:59+00:00"
+            "time": "2020-06-10T22:05:43+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.4.1",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "4639993365dbb3c935d420df22f84c136d9ef4d1"
+                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4639993365dbb3c935d420df22f84c136d9ef4d1",
-                "reference": "4639993365dbb3c935d420df22f84c136d9ef4d1",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
+                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.4.1"
+                "wordpress/core-implementation": "5.4.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -220,31 +221,32 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-04-29T19:02:53+00:00"
+            "time": "2020-06-10T22:05:38+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4"
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
-                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/237faae9a60a4a2e1d45dce1a5836ffa616de63e",
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.6.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
             },
             "require-dev": {
-                "composer/composer": "^1.0",
-                "phpunit/phpunit": ">=4.8.35"
+                "composer/composer": "^1.0 || ^2.0",
+                "phpunit/phpunit": ">=5.7.27"
             },
             "type": "composer-plugin",
             "extra": {
@@ -269,14 +271,14 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2018-11-09T20:10:38+00:00"
+            "time": "2020-04-16T21:44:57+00:00"
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "5.4.1",
+            "version": "5.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.4.1/en_GB.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.4.2/en_GB.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -377,17 +379,17 @@
         },
         {
             "name": "ministryofjustice/wp-moj-components",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-moj-components.git",
-                "reference": "41f785c92b795b76e95ac7f6446298576a0aa48f"
+                "reference": "df36b85ae54e0fd49ccde37cda7b06825b4c6595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-41f785c92b795b76e95ac7f6446298576a0aa48f-zip-40af90.zip",
-                "reference": "41f785c92b795b76e95ac7f6446298576a0aa48f",
-                "shasum": "b64040f73849868d24c6b5bd9fd25b7cac5b0bb3"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-df36b85ae54e0fd49ccde37cda7b06825b4c6595-zip-6fef8c.zip",
+                "reference": "df36b85ae54e0fd49ccde37cda7b06825b4c6595",
+                "shasum": "e58161844aaf6786dbcc870dbc9c2d683ebbf76c"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -422,10 +424,10 @@
             ],
             "description": "A plugin to introduce global functions to a collection of WP sites",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/3.1.1",
+                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/3.1.2",
                 "issues": "https://github.com/ministryofjustice/wp-moj-components/issues"
             },
-            "time": "2020-04-29T12:36:15+00:00"
+            "time": "2020-05-19T10:00:26+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-social-share",
@@ -460,20 +462,23 @@
         },
         {
             "name": "ministryofjustice/wp-rewrite-media-to-s3",
-            "version": "0.2.10",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3.git",
-                "reference": "eafe3b165fe3fa0630b011439317ae3b3b3100e4"
+                "reference": "c65aeaa5beb9498ac316609a20a8fbe99be464d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-rewrite-media-to-s3/ministryofjustice-wp-rewrite-media-to-s3-eafe3b165fe3fa0630b011439317ae3b3b3100e4-zip-3a74e0.zip",
-                "reference": "eafe3b165fe3fa0630b011439317ae3b3b3100e4",
-                "shasum": "2980ada9ac27be3e79d90abfe4ecc84eb83c90d6"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-rewrite-media-to-s3/ministryofjustice-wp-rewrite-media-to-s3-c65aeaa5beb9498ac316609a20a8fbe99be464d6-zip-b81a1e.zip",
+                "reference": "c65aeaa5beb9498ac316609a20a8fbe99be464d6",
+                "shasum": "5b1e9d8b7c41db0910adac6266a9c3837557949f"
             },
             "require": {
                 "composer/installers": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.1"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -484,10 +489,10 @@
             ],
             "description": "A WordPress plugin which rewrites media attachment URLs to S3.",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/tree/0.2.10",
+                "source": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/tree/0.3.1",
                 "issues": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/issues"
             },
-            "time": "2020-04-09T16:11:27+00:00"
+            "time": "2020-05-14T16:29:40+00:00"
         },
         {
             "name": "ministryofjustice/wp-user-roles",
@@ -630,16 +635,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.15.0",
+            "version": "v1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14"
+                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
-                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
+                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
                 "shasum": ""
             },
             "require": {
@@ -651,7 +656,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.15-dev"
+                    "dev-master": "1.17-dev"
                 }
             },
             "autoload": {
@@ -684,30 +689,30 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-02-27T09:26:54+00:00"
+            "time": "2020-05-12T16:14:59+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "67d472b1794c986381a8950e4958e1adb779d561"
+                "reference": "2e977311ffb17b2f82028a9c36824647789c6365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/67d472b1794c986381a8950e4958e1adb779d561",
-                "reference": "67d472b1794c986381a8950e4958e1adb779d561",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2e977311ffb17b2f82028a9c36824647789c6365",
+                "reference": "2e977311ffb17b2f82028a9c36824647789c6365",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.9 || ^7.0 || ^8.0",
-                "symfony/polyfill-ctype": "^1.9"
+                "symfony/polyfill-ctype": "^1.16"
             },
             "require-dev": {
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -746,7 +751,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2020-05-02T13:38:00+00:00"
+            "time": "2020-06-02T14:06:52+00:00"
         },
         {
             "name": "wpackagist-plugin/analytify-analytics-dashboard-widget",
@@ -785,24 +790,6 @@
             "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
-            "name": "wpackagist-plugin/fast-user-switching",
-            "version": "1.4.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/fast-user-switching/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fast-user-switching.zip?timestamp=1551360022"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/fast-user-switching/"
-        },
-        {
             "name": "wpackagist-plugin/safe-redirect-manager",
             "version": "1.9.3",
             "source": {
@@ -819,6 +806,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/safe-redirect-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/user-switching",
+            "version": "1.5.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/user-switching/",
+                "reference": "tags/1.5.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/user-switching.1.5.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/user-switching/"
         },
         {
             "name": "wpackagist-plugin/wp-analytify",
@@ -840,7 +845,7 @@
         },
         {
             "name": "wpackagist-plugin/wp-browser-update",
-            "version": "4.1.1",
+            "version": "4.1.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-browser-update/",
@@ -848,7 +853,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-browser-update.zip?timestamp=1583530053"
+                "url": "https://downloads.wordpress.org/plugin/wp-browser-update.zip?timestamp=1591470974"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -860,16 +865,16 @@
     "packages-dev": [
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "1ab9842d69e64fb3a01be6b656501032d1b78cb7"
+                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/1ab9842d69e64fb3a01be6b656501032d1b78cb7",
-                "reference": "1ab9842d69e64fb3a01be6b656501032d1b78cb7",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
+                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +905,7 @@
                 "Xdebug",
                 "performance"
             ],
-            "time": "2020-03-01T12:26:26+00:00"
+            "time": "2020-06-04T11:16:35+00:00"
         },
         {
             "name": "pdepend/pdepend",
@@ -1168,22 +1173,24 @@
         },
         {
             "name": "symfony/config",
-            "version": "v5.0.8",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "db1674e1a261148429f123871f30d211992294e7"
+                "reference": "b8623ef3d99fe62a34baf7a111b576216965f880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/db1674e1a261148429f123871f30d211992294e7",
-                "reference": "db1674e1a261148429f123871f30d211992294e7",
+                "url": "https://api.github.com/repos/symfony/config/zipball/b8623ef3d99fe62a34baf7a111b576216965f880",
+                "reference": "b8623ef3d99fe62a34baf7a111b576216965f880",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
                 "symfony/filesystem": "^4.4|^5.0",
-                "symfony/polyfill-ctype": "~1.8"
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.15"
             },
             "conflict": {
                 "symfony/finder": "<4.4"
@@ -1201,7 +1208,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -1228,29 +1235,31 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2020-04-15T15:59:10+00:00"
+            "time": "2020-05-23T13:08:13+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v5.0.8",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "92d8b3bd896a87cdd8aba0a3dd041bc072e8cfba"
+                "reference": "6508423eded583fc07e88a0172803e1a62f0310c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/92d8b3bd896a87cdd8aba0a3dd041bc072e8cfba",
-                "reference": "92d8b3bd896a87cdd8aba0a3dd041bc072e8cfba",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/6508423eded583fc07e88a0172803e1a62f0310c",
+                "reference": "6508423eded583fc07e88a0172803e1a62f0310c",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.2.5",
                 "psr/container": "^1.0",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.15",
                 "symfony/service-contracts": "^1.1.6|^2"
             },
             "conflict": {
-                "symfony/config": "<5.0",
+                "symfony/config": "<5.1",
                 "symfony/finder": "<4.4",
                 "symfony/proxy-manager-bridge": "<4.4",
                 "symfony/yaml": "<4.4"
@@ -1260,7 +1269,7 @@
                 "symfony/service-implementation": "1.0"
             },
             "require-dev": {
-                "symfony/config": "^5.0",
+                "symfony/config": "^5.1",
                 "symfony/expression-language": "^4.4|^5.0",
                 "symfony/yaml": "^4.4|^5.0"
             },
@@ -1274,7 +1283,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -1301,30 +1310,76 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2020-04-28T17:58:55+00:00"
+            "time": "2020-06-12T08:11:32+00:00"
         },
         {
-            "name": "symfony/filesystem",
-            "version": "v5.0.8",
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/filesystem.git",
-                "reference": "7cd0dafc4353a0f62e307df90b48466379c8cc91"
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7cd0dafc4353a0f62e307df90b48466379c8cc91",
-                "reference": "7cd0dafc4353a0f62e307df90b48466379c8cc91",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
+                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "time": "2020-05-27T08:34:37+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "6e4320f06d5f2cce0d96530162491f4465179157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6e4320f06d5f2cce0d96530162491f4465179157",
+                "reference": "6e4320f06d5f2cce0d96530162491f4465179157",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -1351,24 +1406,86 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2020-04-12T14:40:17+00:00"
+            "time": "2020-05-30T20:35:19+00:00"
         },
         {
-            "name": "symfony/service-contracts",
-            "version": "v2.0.1",
+            "name": "symfony/polyfill-php80",
+            "version": "v1.17.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "144c5e51266b281231e947b51223ba14acf1a749"
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/144c5e51266b281231e947b51223ba14acf1a749",
-                "reference": "144c5e51266b281231e947b51223ba14acf1a749",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/5e30b2799bc1ad68f7feb62b60a73743589438dd",
+                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.0.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.17-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2020-05-12T16:47:27+00:00"
+        },
+        {
+            "name": "symfony/service-contracts",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "66a8f0957a3ca54e4f724e49028ab19d75a8918b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/66a8f0957a3ca54e4f724e49028ab19d75a8918b",
+                "reference": "66a8f0957a3ca54e4f724e49028ab19d75a8918b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
                 "psr/container": "^1.0"
             },
             "suggest": {
@@ -1377,7 +1494,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -1409,7 +1526,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2020-05-20T17:43:50+00:00"
         }
     ],
     "aliases": [],

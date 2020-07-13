@@ -32,7 +32,7 @@
     "wpackagist-plugin/wp-browser-update": "*",
     "wpackagist-plugin/safe-redirect-manager": "*",
     "wpackagist-plugin/classic-editor": "*",
-    "wpackagist-plugin/fast-user-switching": "*",
+    "wpackagist-plugin/user-switching": "*",
     "ministryofjustice/wp-user-roles": "*",
     "ministryofjustice/wp-moj-social-share": "*",
     "ministryofjustice/wp-moj-components": "*",
